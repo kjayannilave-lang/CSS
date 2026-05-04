@@ -3,34 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> study area</title>
+    <title>pratice</title>
     <style>
-        h2.class1 {
-            border :  thin double  rgb(141, 74, 74);
-            border-radius: 12px;
-            text-align: center;
-        }
+        body{
+            background-color: rgb(210, 189, 165);
+            font-style: italic;
             
-        h3.class2 {
-            border: thick dashed;
-            border-color: red green blue yellow;
-                    text-align: center;
-                    margin: 50px 50 px 50 px 50 px  ;
-                    background-color: blue;
-                }
-        h4.class3 {
-            border-top : 2px dashed red ;
-            border-bottom : 2px  dashed red ;
-            border-left: 2px solid yellow;
-            border-right: 2px solid yellow;
+        }
+        *{
             text-align: center;
-    }
+            box-sizing: border-box;
+            color: rgb(4, 19, 19);
+        }
+        .card{
+            border: 10px solid hsl(308, 41%, 54%);
+            margin: auto;
+            width:  300px;
+            padding: 20px;
+            border-radius: 30px;
+            background-color: rgb(40, 95, 40);
+            
+        }
+        .card h3 {
+            margin: auto;
+            padding: 10px;
+            text-decoration: underline ;
+            text-transform: capitalize;
+            letter-spacing: 2px;
+            font-size: medium;
+            font-weight: bold;
+        }
+        .card img{
+            margin: 10px auto;
+          max-width: 100%;
+          min-width: 10px;
+          height: auto;
+          border-radius: 30px;
+        }
+        p{
+            margin: auto;
+            text-indent: 5px;
+            line-height: 1;
+            word-spacing: 5px;
+            white-space: nowrap;
+            font-size: smaller;
+            
+        }
+
     </style>
 </head>
 <body>
-    <h2 class="class1"> my name</h2>
-    <h3 class="class2">my native </h3>
-    <h4 class="class3"> my hobbies</h4>
+    <div class="card">
+        <img src="data:image/jpeg;base64,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" alt="moon">
+<h3> Nilave K Jayan</h3>
+<p>my name is nila thats why gave moon</p>
+    </div>
     
 </body>
 </html>
