@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS Practice Page</title>
+
+<style>
+
+/* 1. First line bold */
+p::first-line {
+    font-weight: bold;
+}
+
+/* 2. First letter red and bigger */
+p::first-letter {
+    color: red;
+    font-size: 24px;
+}
+
+/* 3. Color only the second h3 using Adjacent Sibling Selector */
+h3 + h3 {
+    color: green;
+}
+
+/* 4. First link in list red */
+ul li:first-child a {
+    color: red;
+}
+
+/* 5. Link styles */
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 6. Example of combinator (Descendant Selector) */
+section p {
+    font-family: Arial, sans-serif;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Section with heading and two paragraphs -->
+<section>
+    <h2>Welcome to My Web Page</h2>
+
+    <p>
+        This is the first paragraph. It demonstrates how the first line is bold 
+        and the first letter is styled differently using CSS pseudo-elements.
+    </p>
+
+    <p>
+        This is the second paragraph. The same styling applies here as well, 
+        making it visually consistent and easy to read.
+    </p>
+</section>
+
+<!-- Container with two h3 headings -->
+<div>
+    <h3>First Heading</h3>
+    <h3>Second Heading (This should be green)</h3>
+</div>
+
+<!-- List with links -->
+<div>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</div>
+
+</body>
+</html>
