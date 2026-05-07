@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Product Card</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Product Card */
+.card{
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid gray;
+    text-align: center;
+}
+
+/* Product Image */
+.product-img{
+    width: 100%;
+    border: 2px solid black;
+
+    /* Top-left and Bottom-right corners rounded */
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+/* Product Name */
+h2{
+    font-size: 28px;
+}
+
+/* Button */
+button{
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Small Screen */
+@media only screen and (max-width: 600px){
+
+    .card{
+        text-align: center;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    button{
+        font-size: 14px;
+    }
+
+}
+
+/* Landscape Mode */
+@media only screen and (orientation: landscape){
+
+    .card{
+        background-color: lightblue;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRNVjy0Ci6YJR9T80IRJ2poLEWDn_-cRmtx8HuFaL98HkPIfSZKmk72PoXhU2Ymcl13f5oHHFn1FhAVbQjCtA0nDcTagsER" 
+         alt="Product Image" 
+         class="product-img">
+
+    <h2>Smart Watch</h2>
+
+    <button>Buy Now</button>
+
+</div>
+
+</body>
+</html>
