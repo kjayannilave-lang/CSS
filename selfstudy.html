@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>self</title>
+    <style>
+        h1{
+            color: rgb(107, 38, 38);
+            background-color: blanchedalmond;
+            width: 100px;
+        align-items:center;
+        margin: auto;
+        
+        
+        }
+        h1:hover{
+            color: crimson;
+            background-color: blueviolet;
+            cursor: pointer;
+        }
+        h1::first-letter{
+            font-size: 50px;
+        }
+        body{
+            background-color: rgb(143, 143, 156);
+            align-items: center;
+            margin:50px auto;
+            
+        }
+        .one{
+            width:50%;
+            height: 50%;
+            border: 10px solid black;
+            box-sizing: border-box;
+            text-align: center;
+            background-color: blanchedalmond;
+            padding: 40px;
+            display: block;
+            margin: auto;
+            color: blueviolet;
+        }
+        img{
+            text-decoration: none;
+        border-radius: 10px ;
+            width: 500px;
+            margin: 20px auto;
+            padding-top: 30px;
+            display: block;
+        }
+        /* hover */
+        img:hover{
+            border-radius: 360px;
+        }
+        ul{
+            list-style-position: inside;
+            padding: 0;
+            color: rgb(59, 10, 122);
+        }
+        #two{
+            text-transform: uppercase;
+            color: rgb(188, 149, 58);
+            font-style: italic;
+
+        }
+       #two::first-line{
+            font-weight: bolder;
+        }
+       .one p::before{
+            content:"hii";
+            display: block;
+            text-align: left;
+            
+        }
+       .one p::after{
+            content: "hii";
+            display: block;
+            text-align: left;
+            color: blue;
+        }
+        /* changes in link */
+        a:visited{
+color: pink;
+        }
+a{
+    text-decoration: none;
+    color: blueviolet;
+}  
+a:active{
+    color: aquamarine;
+} 
+#meme p:first-child{
+    color:red ;
+}
+
+
+  
+
+    </style>
+</head>
+<body>
+    <div class="one">
+        <h1>nyka</h1>
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRlDpBlmQjATySddbEP2N2rIR-eNwdWBtvHnZaf2FknGJI24M5J3C41rxTTYLh_9g" alt="nyka">
+        <h2>product price</h2>
+        <ul>
+            <li>lipstick-$700</li>
+            <li>powder-$900</li>
+            <li>skin care-$800</li>
+        </ul>
+        <p id="two">
+            This product is designed to make everyday life easier with its modern design, 
+            reliable performance, and user-friendly features. It offers excellent quality, durability, and value, making it a perfect choice for both personal and professional use.
+        </p>
+    </div>
+    <a href="https://www.nykaa.com/">Explore our products</a>
+    <div id="meme">
+        <p>my namw</p>
+        <p>address</p>
+        <p>phn</p>
+        <p>me</p>
+    </div>
+    
+</body>
+</html>

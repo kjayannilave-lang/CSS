@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Split Login Form</title>
+
+<style>
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Full Screen */
+body{
+    height:100vh;
+    display:flex;
+}
+
+/* LEFT COLOR SIDE */
+.left{
+    width:50%;
+    min-width:300px;
+    max-width:700px;
+
+    background: linear-gradient(
+        to bottom,
+        #3f6481,
+        #8a8d8f,
+        #b9a99c
+    );
+}
+
+/* RIGHT FORM SIDE */
+.right{
+    width:50%;
+    min-width:300px;
+    max-width:700px;
+
+    background:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* LOGIN BOX */
+.login-box{
+    width:75%;
+    max-width:400px;
+}
+
+/* Heading */
+.login-box h2{
+    color:#d35400;
+    margin-bottom:25px;
+    font-size:40px;
+}
+
+/* Labels */
+label{
+    display:block;
+    margin-top:18px;
+    font-size:20px;
+}
+
+/* Small Input Boxes */
+input[type="text"],
+input[type="password"]{
+    width:100%;
+    padding:12px;
+    margin-top:8px;
+
+    font-size:16px;
+
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+/* Remember Me */
+.remember{
+    margin:20px 0;
+    font-size:16px;
+}
+
+/* Small Checkbox */
+.remember input{
+    width:15px;
+    height:15px;
+}
+
+/* Button */
+button{
+    width:100%;
+    padding:14px;
+
+    background:#d35400;
+    color:white;
+
+    border:none;
+    border-radius:5px;
+
+    font-size:18px;
+    cursor:pointer;
+}
+
+/* Hover */
+button:hover{
+    opacity:0.7;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    body{
+        display:block;
+    }
+
+    /* Hide left color side */
+    .left{
+        display:none;
+    }
+
+    /* Full width form */
+    .right{
+        width:100%;
+        min-width:100%;
+        max-width:100%;
+        height:100vh;
+    }
+
+    .login-box{
+        width:90%;
+    }
+
+    .login-box h2{
+        font-size:32px;
+    }
+
+    label{
+        font-size:18px;
+    }
+
+    input[type="text"],
+    input[type="password"]{
+        padding:10px;
+        font-size:14px;
+    }
+
+    button{
+        padding:12px;
+        font-size:16px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- LEFT SIDE -->
+<div class="left"></div>
+
+<!-- RIGHT SIDE -->
+<div class="right">
+
+    <div class="login-box">
+
+        <h2>Login Form</h2>
+
+        <label>Email :</label>
+        <input type="text" placeholder="Enter Email">
+
+        <label>Password :</label>
+        <input type="password" placeholder="Enter Password">
+
+        <div class="remember">
+            <input type="checkbox"> Remember Me
+        </div>
+
+        <button>Login</button>
+
+    </div>
+
+</div>
+
+</body>
+</html>

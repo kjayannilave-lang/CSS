@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=w, initial-scale=1.0">
+    <title>Attribute</title>
+    <style>
+        body{
+            margin: 50px auto;
+            box-sizing: border-box;
+            border: 20px solid rgb(141, 20, 125);
+            width: 500px;
+            height: auto;
+            padding: 30px;
+            text-align: center;
+        }
+      
+        a[href] {
+            color: blue;
+        }
+        /* h2 and h3 styling */
+        .one{
+            margin-top: auto;
+            padding: 10px 50px;
+            color: #64198d;
+            text-transform: capitalize;
+        }
+        .one::first-letter{
+            font-size: xx-large;
+            color:rgb(69, 146, 169) ;
+        }
+        h2:hover{
+            background-color: aqua;
+        }
+        #two{
+            text-transform: capitalize;
+            font-weight: 100;
+            color: rgb(14, 110, 110);
+        }
+        #two:hover{
+            background-color: chartreuse;
+        }
+/* img styling */
+img[src]{
+    text-decoration: none;
+    text-align: center;
+    margin: auto;
+
+
+     width: 250px;
+            height: 150px;
+        
+            border-radius: 10px;
+            display: block;
+        
+}
+/* buttton styling */
+button{
+padding: auto;
+    text-align: justify;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+   margin: 10px auto;
+   display: block;
+}
+button:hover{
+  background-color:#64198d;
+}
+button:active{
+    color: blue;
+}
+/* attribute selectors */
+.three [class|="nilu"] {
+    color: #db160f;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <h2 class="one">python fullstack</h2>
+    <h3 id="two">Instructor-mubisha</h3>
+    <img src="https://images-static.nykaa.com/uploads/808e6492-e965-4fd0-9e1c-150d0aa2a4cb.gif" alt="This is a image">
+    <button>Enroll</button>
+  <div class="three">
+    <h3 class="nilu">myself</h3>
+    <h3 class="nilu-two">my</h3>
+    <h3 class="nilu-one">mine</h3>
+    <h3 class="niluout">metoo</h3>
+</div>
+
+    </div>
+    
+    
+</body>
+</html>  
