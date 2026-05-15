@@ -3,9 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Team Profile</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    
+
+<body class="bg-light">
+
+    <div class="container mt-5">
+
+        <!-- Main Heading -->
+        <div class="text-center mb-4">
+            <h1 class="display-4 fw-bold">TechNova Solutions</h1>
+            <p class="lead text-muted">Building Success Through Teamwork</p>
+        </div>
+
+        <!-- Team Quote -->
+        <blockquote class="blockquote text-center mb-5">
+            <p class="fs-3 fw-semibold">
+                "Coming together is a beginning. Keeping together is progress. Working together is success."
+            </p>
+        </blockquote>
+
+        <!-- Team Values -->
+        <div class="card shadow-sm mb-5">
+            <div class="card-body">
+                <h3 class="mb-3">Our Team Values</h3>
+
+                <ul class="list-group">
+                    <li class="list-group-item">Integrity and Transparency</li>
+                    <li class="list-group-item">Innovation and Creativity</li>
+                    <li class="list-group-item">Collaboration and Respect</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Team Image -->
+        <div class="text-center mb-5">
+            <img src="https://via.placeholder.com/200"
+                 alt="Team Photo"
+                 class="rounded-circle img-fluid shadow">
+        </div>
+
+        <!-- Employee Table -->
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered">
+                
+                <thead class="table-dark">
+                    <tr>
+                        <th>Employee Name</th>
+                        <th>Role</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Arjun Menon</td>
+                        <td>Project Manager</td>
+                        <td>
+                            <span class="badge bg-success">Active</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Meera Das</td>
+                        <td>UI/UX Designer</td>
+                        <td>
+                            <span class="badge bg-warning text-dark">On Leave</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Rahul Nair</td>
+                        <td>Software Developer</td>
+                        <td>
+                            <span class="badge bg-danger">Resigned</span>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+
+        <!-- Warning Alert -->
+        <div class="alert alert-warning mt-4">
+            Warning: Some employees are currently not active.
+        </div>
+
+    </div>
+
 </body>
 </html>
